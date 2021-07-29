@@ -23,7 +23,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var resposta4Button: UIButton!
     
     
-    //Pode alterar o botão (texto, opacidade, etc) mas não pode fazer nada com ele.
+    //Pode alterar o botão (texto, opacidade, etc) mas não pode fazer nada com ele. //
 
     
     override func viewDidLoad() {
