@@ -10,7 +10,7 @@ import UIKit
 class QuizViewController: UIViewController {
     
     var perguntaAtual : String! //tenho certeza do que eu to fazendo !
-    let perguntas = ["A","I","KA","KO","U","N"]
+    let perguntas = ["WA","RA","YA","MA","HA","NA","TA","SA","KA","A","RI","MI","HI","NI","CHI","SHI","KI","I","WO","RU","YU","MU","FU","NU","TSU","SU","KU","U","RE","ME","HE","NE","TE","SE","KE","E","N","RO","YO","MO","HO","NO","TO","SO","KO","O"]
 
     @IBOutlet weak var caractereImageView: UIImageView!
     
@@ -84,20 +84,36 @@ class QuizViewController: UIViewController {
         print(perguntasButton.count)
         perguntasButton.append(perguntaAtual)
         
-        var nomeBotao = perguntasButton[gerarNumerosAleatorios(perguntasButton.count)]
+        perguntasButton.shuffle()
+        var nomeBotao = perguntasButton.first
         resposta1Button.setTitle(nomeBotao, for: .normal)
-        perguntasButton.removeAll(where: {$0 == nomeBotao})
+        perguntasButton.removeFirst()
         
-       nomeBotao = perguntasButton[gerarNumerosAleatorios(perguntasButton.count)]
+        perguntasButton.shuffle()
+        nomeBotao = perguntasButton.first
         resposta2Button.setTitle(nomeBotao, for: .normal)
-        perguntasButton.removeAll(where: {$0 == nomeBotao}) //pastre
+        perguntasButton.removeFirst()
         
-        nomeBotao = perguntasButton.first!
+        perguntasButton.shuffle()
+        nomeBotao = perguntasButton.first
         resposta3Button.setTitle(nomeBotao, for: .normal)
         perguntasButton.removeFirst()
         
-        nomeBotao = perguntasButton.first!
+        perguntasButton.shuffle()
+        nomeBotao = perguntasButton.first
         resposta4Button.setTitle(nomeBotao, for: .normal)
+        perguntasButton.removeFirst()
+        
+//       nomeBotao = perguntasButton[gerarNumerosAleatorios(perguntasButton.count)]
+//        resposta2Button.setTitle(nomeBotao, for: .normal)
+//        perguntasButton.removeAll(where: {$0 == nomeBotao}) //pastre
+//
+//        nomeBotao = perguntasButton.first!
+//        resposta3Button.setTitle(nomeBotao, for: .normal)
+//        perguntasButton.removeFirst()
+//
+//        nomeBotao = perguntasButton.first!
+//        resposta4Button.setTitle(nomeBotao, for: .normal)
         
     }
     
