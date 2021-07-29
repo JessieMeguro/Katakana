@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "65905846-B9D5-4839-9081-98B0DA990532"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73D7A304-10D4-4424-B17C-EC17F9AAAFCE"
+            shouldBeEnabled = "Yes"
+            condition = "perguntasButton.count == 0"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Katakana/QuizViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "gerarRespostaAleatoria()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
