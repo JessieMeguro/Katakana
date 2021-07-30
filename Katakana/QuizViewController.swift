@@ -22,7 +22,11 @@ class QuizViewController: UIViewController {
     
     @IBOutlet weak var resposta4Button: UIButton!
     
+    @IBOutlet weak var taCerto: UILabel!
     
+    @IBOutlet weak var cardAcertou: UIImageView!
+    
+    @IBOutlet weak var cardErrou: UIImageView!
     //Pode alterar o botão (texto, opacidade, etc) mas não pode fazer nada com ele. //
 
     
@@ -125,10 +129,20 @@ class QuizViewController: UIViewController {
     }
     func checarResposta(resposta : String) {
         if perguntaAtual == resposta {
-            print("Acertou")
+            taCerto.text = "Você acertou!"
+            animacaoTaCerto()
         } else {
             print("Errou")
         }
+    }
+    
+    func animacaoTaCerto() {
+        UIView.animate(withDuration: 0.5, animations: {
+            self.taCerto.alpha = 2
+            self.cardAcertou.alpha = 1
+                })
+        UIView.animate(withDuration: 0.5, delay: 1.5, animations: {
+                        self.taCerto.alpha = 0; self.cardAcertou.alpha = 0}, completion: nil)
     }
     
 }
