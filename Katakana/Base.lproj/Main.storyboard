@@ -171,12 +171,6 @@
                                     <action selector="resposta2ButtonAction:" destination="nkJ-He-ZiW" eventType="touchUpInside" id="VvT-Ay-8YD"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="errou" translatesAutoresizingMaskIntoConstraints="NO" id="XCV-zj-mdg">
-                                <rect key="frame" x="-2419" y="-3135" width="5252" height="7176"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="XCV-zj-mdg" secondAttribute="height" multiplier="374:511" id="nmV-jK-qom"/>
-                                </constraints>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="acertou" translatesAutoresizingMaskIntoConstraints="NO" id="m8w-ep-dRT">
                                 <rect key="frame" x="20" y="233.5" width="374" height="439"/>
                             </imageView>
@@ -199,7 +193,6 @@
                             <constraint firstItem="yQI-JO-FDb" firstAttribute="bottom" secondItem="M5A-2R-ShP" secondAttribute="bottom" id="7Um-8A-xPw"/>
                             <constraint firstItem="yQI-JO-FDb" firstAttribute="top" secondItem="qK2-oz-cVa" secondAttribute="bottom" constant="91" id="EiH-DB-K2C"/>
                             <constraint firstItem="mQR-l8-qa1" firstAttribute="bottom" secondItem="OpS-cI-oK7" secondAttribute="bottom" constant="10" id="FNr-DV-PDB"/>
-                            <constraint firstItem="XCV-zj-mdg" firstAttribute="centerX" secondItem="mQR-l8-qa1" secondAttribute="centerX" id="GLe-YQ-Jqv"/>
                             <constraint firstItem="mQR-l8-qa1" firstAttribute="trailing" secondItem="OpS-cI-oK7" secondAttribute="trailing" constant="18" id="Gry-kg-a0B"/>
                             <constraint firstItem="iur-zX-h7q" firstAttribute="centerY" secondItem="M5A-2R-ShP" secondAttribute="centerY" id="I4g-FT-CeG"/>
                             <constraint firstItem="ION-k0-aNG" firstAttribute="top" secondItem="m8w-ep-dRT" secondAttribute="bottom" constant="-160" id="L7L-Uj-5yK"/>
@@ -214,7 +207,6 @@
                             <constraint firstItem="e9K-6D-QIe" firstAttribute="leading" secondItem="mQR-l8-qa1" secondAttribute="leading" constant="18" id="Zj5-e4-zf8"/>
                             <constraint firstItem="iur-zX-h7q" firstAttribute="centerX" secondItem="M5A-2R-ShP" secondAttribute="centerX" id="c6h-SU-Odw"/>
                             <constraint firstItem="LOp-Eo-vfZ" firstAttribute="centerY" secondItem="OpS-cI-oK7" secondAttribute="centerY" id="db6-pl-Wvt"/>
-                            <constraint firstItem="XCV-zj-mdg" firstAttribute="centerY" secondItem="mQR-l8-qa1" secondAttribute="centerY" id="erO-N5-VnL"/>
                             <constraint firstItem="ION-k0-aNG" firstAttribute="centerX" secondItem="m8w-ep-dRT" secondAttribute="centerX" id="fDU-Vv-VLt"/>
                             <constraint firstItem="m8w-ep-dRT" firstAttribute="width" secondItem="iux-Uc-LXH" secondAttribute="height" multiplier="187:448" id="fl6-Fa-SCz"/>
                             <constraint firstItem="OpS-cI-oK7" firstAttribute="top" secondItem="yQI-JO-FDb" secondAttribute="bottom" constant="5" id="h2a-Y2-zQQ"/>
@@ -233,7 +225,6 @@
                     <connections>
                         <outlet property="caractereImageView" destination="qK2-oz-cVa" id="Qib-Zv-Sah"/>
                         <outlet property="cardAcertou" destination="m8w-ep-dRT" id="0cG-Zk-EIw"/>
-                        <outlet property="cardErrou" destination="XCV-zj-mdg" id="GxJ-Qy-mdI"/>
                         <outlet property="resposta1Button" destination="iur-zX-h7q" id="pia-8x-NYS"/>
                         <outlet property="resposta2Button" destination="lXQ-IS-ZHg" id="xTJ-i6-PYb"/>
                         <outlet property="resposta3Button" destination="nLY-wb-gFI" id="pgt-Nm-Yk1"/>
@@ -286,7 +277,6 @@
         <image name="CHI" width="4830" height="4829"/>
         <image name="Selo" width="3773" height="3782"/>
         <image name="acertou" width="5230" height="7176"/>
-        <image name="errou" width="5230" height="7176"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
